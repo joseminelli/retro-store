@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "title": "Arctic Monkeys - AM Vinil",
+        "price": 199.99,
+        "description": "Arctic Monkeys lançaram seu quinto álbum, intitulado AM. AM foi produzido por James Ford e co-produzido por Ross Orton at Sage & Sound Recording",
+        "category": "vinil",
+        "image": "https://cdn.discordapp.com/attachments/1109149984357613638/1109150001948524585/imagem1.png",
+        "rating": {
+            "rate": 5.0,
+            "count": 120
+        }
+    },
+    {
+        "id": 2,
+        "title": "Arctic Monkeys - Favourite Worst Nightmare Vinil",
+        "price": 199.99,
+        "description": "Favorite Worst Nightmare é o álbum seguinte ao fenômeno de maior sucesso de 2006! O primeiro álbum do Arctic Monkeys, Whatever People Say I Am",
+        "category": "vinil",
+        "image": "https://cdn.discordapp.com/attachments/1109149984357613638/1109152081702555849/imagem2.png",
+        "rating": {
+            "rate": 4.1,
+            "count": 259
+        }
+    },
+    {
+        "id": 3,
+        "title": "Coldplay - Parachutes Vinil",
+        "price": 241.90,
+        "description": "Parachutes é o álbum de estreia da banda inglesa de rock Coldplay, lançado pela gravadora Parlophone em 10 de julho de 2000 no Reino Unido",
+        "category": "vinil",
+        "image": "https://cdn.discordapp.com/attachments/1109149984357613638/1109153165137416362/imagem3.png",
+        "rating": {
+            "rate": 4.7,
+            "count": 500
+        }
+    },
+    {
+        "id": 4,
+        "title": "Blink-182 - Enema Of The State Vinil",
+        "price": 241.90,
+        "description": "Enema Of The State foi um enorme sucesso comercial. O álbum vendeu mais de 15 milhões de cópias em todo o mundo, catapultando a banda para se tornar uma das maiores bandas de rock da virada do século.",
+        "category": "vinil",
+        "image": "https://cdn.discordapp.com/attachments/1109149984357613638/1109156266422587523/imagem4.png",
+        "rating": {
+            "rate": 4.7,
+            "count": 500
+        }
+    },
+    {
+        "id": 5,
+        "title": " Cage The Elephant - Melophobia Vinil",
+        "price": 133.90,
+        "description": "Lançamento em 2013, o aguardado terceiro álbum completo da banda Alt-Rock. Melophobia foi gravado em Nashville, TN e reúne a banda com o produtor Jay Joyce, que produziu os dois lançamentos anteriores do grupo.",
+        "category": "vinil",
+        "image": "https://cdn.discordapp.com/attachments/1109149984357613638/1109158265364947054/imagem5.png",
+        "rating": {
+            "rate": 4.6,
+            "count": 400
+        }
+    },
+    {
+        "id": 6,
+        "title": "Mac Demarco - This Old Dog Vinil ",
+        "price": 299.99,
+        "description": " Antes que vocês, anciãos, vire a cabeça e zombe da premissa de um idiota do rock and roll de 20 e poucos anos que se autodenomina um velho qualquer, considere o seguinte: o referido perpetrador, aquele que atende pelo nome de Mac DeMarco, gastou melhor parte de seu tempo até agora escrevendo, gravando e lançando um álbum de sua própria música praticamente a cada virada de calendário e praticamente por conta própria",
+        "category": "vinil",
+        "image": "https://cdn.discordapp.com/attachments/1109149984357613638/1109160397174485152/imagem6.png",
+        "rating": {
+            "rate": 3.9,
+            "count": 70
+        }
+    },
+    {
+        "id": 7,
+        "title": "Nirvana - Nevermind Vinil",
+        "price": 314.99,
+        "description": "Versçao limitada em vinil deste álbum clássico de 1991. Nevermind se tornou um sucesso surpresa no final de 1991, em grande parte devido à popularidade de seu primeiro single, 'Smells Like Teen Spirit'. Em janeiro de 1992, substituiu o álbum Dangerous, de Michael Jackson, em primeiro lugar na parada Billboard 200.",
+        "category": "vinil",
+        "image": "https://cdn.discordapp.com/attachments/1109149984357613638/1109161027557400596/imagem7.png",
+        "rating": {
+            "rate": 3,
+            "count": 400
+        }
+    },
+    {
+        "id": 8,
+        "title": "Green Day - God's Favorite Band",
+        "price": 409.99,
+        "description": "Eu só quero dizer que esta é uma coleção brilhante para qualquer fã do Green Day, seja 1 a ano ou 30 anos, esta é uma introdução perfeita à sua música.",
+        "category": "vinil",
+        "image": "https://cdn.discordapp.com/attachments/1109149984357613638/1109162006898020373/imagem8.png",
+        "rating": {
+            "rate": 1.9,
+            "count": 100
+        }
+    }
+]
