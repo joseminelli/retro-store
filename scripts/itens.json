@@ -94,5 +94,53 @@
             "rate": 1.9,
             "count": 100
         }
+    },
+    {
+        "id": 9,
+        "title": "Lana Del Rey - Ultraviolence",
+        "price": 50.90,
+        "description": "Álbum de 2014 da aclamada cantora/compositora. Lana Del Rey cativou o mundo com seu álbum de estreia BORN TO DIE, que ganhou disco de platina nos Estados Unidos.",
+        "category": "vinil",
+        "image": "https://cdn.discordapp.com/attachments/1109149984357613638/1109225583050752133/imagem9.png",
+        "rating": {
+            "rate": 1.9,
+            "count": 100
+        }
+    },
+    {
+        "id": 10,
+        "title": "Sufjan Stevens - Carrie & Lowelld",
+        "price": 291.99,
+        "description": "Carrie & Lowell soa como memória: abrange décadas, mas não negocia com pastiche ou nostalgia. Os vocais translúcidos de duas faixas de Stevens lavam o painel de Americana, mas enquanto corremos em direção à costa, somos lembrados de que a luz do sol leva à sombra, pois esta é uma paisagem de estradas terminais, pontes instáveis, eventos traumáticos. locadoras de vídeo e camas infelizes que fornecem o cenário para contos de carros canivetes, funerais e perdão para os mortos",
+        "category": "vinil",
+        "image": "https://cdn.discordapp.com/attachments/1109149984357613638/1109226495085400094/imagem10.png",
+        "rating": {
+            "rate": 1.9,
+            "count": 100
+        }
+    },
+    {
+        "id": 11,
+        "title": "Lana Del Rey - Lust For Life",
+        "price": 429.19,
+        "description": "Ouvir música é importante na vida de todo mundo. Por isso, precisa-se comprar os melhores álbuns e conteúdos para aumentar seu repertório. Um dos produtos que vai te ajudar com isso é o álbum Lust For Life, de Lana Del Rey. Lust for Life é o quinto álbum de estúdio gravado pela cantora e compositora americana Lana Del Rey",
+        "category": "vinil",
+        "image": "https://cdn.discordapp.com/attachments/1109149984357613638/1109227612355690566/imagem11.png",
+        "rating": {
+            "rate": 1.9,
+            "count": 100
+        }
+    },
+    {
+        "id": 12,
+        "title": "Green Day - American Idiot",
+        "price": 303.44,
+        "description": "Dois discos de vinil preto de peso regular em Pallas em Stoughton capa dobrável embrulhada em papel com inserção de pôster e cartão postal compartilhado do catálogo do Green Day.",
+        "category": "vinil",
+        "image": "https://cdn.discordapp.com/attachments/1109149984357613638/1109228046562627735/imagem12.png",
+        "rating": {
+            "rate": 1.9,
+            "count": 100
+        }
     }
 ]
