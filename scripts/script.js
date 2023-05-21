@@ -76,27 +76,27 @@ const API = "https://fakestoreapi.com/products/";
 fetch("scripts/itens.json")
 
   //call API and get JSON format
-  .then((respuesta) => respuesta.json())
-  //print API on app = app.append(...todoLosItems)
+  .then((response) => response.json())
+  //print API on app = app.append(...todoosItens)
   .then((responseJson) => {
     //console.log(responseJson);
     var todosLosItems = [];
     responseJson.forEach((item) => {
       //console.log(item.price);
-      //crear imagen
+      //cria imagem
       const image = document.createElement("img");
       image.src = item.image;
       image.className = "card-img-top";
 
-      //cerear tiutlo
+      //cria tíutlo
       const title = document.createElement("h5");
       title.textContent = item.title.substring(0, 36) + "...";
       title.className = "card-title";
-      //crear descripcion
+      //cria descrição
       const description = document.createElement("p");
       description.textContent = item.description.substring(0, 70) + "...";
 
-      //category
+      //categoria
       const category = document.createElement("p");
       category.textContent = item.category;
 
@@ -104,20 +104,17 @@ fetch("scripts/itens.json")
       divCard.append(title, description);
       divCard.className = "card-body";
 
-      //crear precio
+      //cria preço
       const price = document.createElement("b");
       price.textContent = "R" + formatPrice(item.price);
       price.className = "nav me-auto ms-3 mt-3";
 
-      //create Botones
+      //cria botão
       const addToCard = document.createElement("button");
       addToCard.textContent = "Add ao carrinho";
       addToCard.className = "btn btn-outline-success flex-row-reverse m-2";
       addToCard.id = "addToCard";
       addToCard.addEventListener("click", function () {
-        //console.log(title.textContent);
-        //console.log(price.textContent);
-        //console.log(category.textContent);
         addItemToCart(
           title.textContent.substring(0, 15) + "...",
           price.textContent
@@ -128,7 +125,7 @@ fetch("scripts/itens.json")
       actionDiv.append(price, addToCard);
       actionDiv.className = "d-flex";
 
-      //crer contenendor
+      //cria conainer
       const myContainer = document.createElement("div");
       myContainer.append(image, divCard, actionDiv);
       myContainer.className;
@@ -225,29 +222,6 @@ const anotherFunction = async (url_api) => {
   try {
     const data = await fetchData(url_api);
     console.log(data[0]);
-    // for (let i = 0; i < data.length; i++) {
-    //     const title = data[i].title;
-    //     const price = data[i].price;
-    //     const description = data[i].description;
-    //     const image = data[i].image;
-    //     const category = data[i].category;
-    //     console.log(title);
-    //     document.getElementById("currencySelected").innerHTML = `
-    //         <div class="col">
-    //             <div class="card h-100">
-    //             <img src="${image}" class="card-img-top" alt="...">
-    //                 <div class="card-body">
-    //                     <h5 class="card-title" id="itemTitle">${title}</h5>
-    //                     <p class="card-text">${description}</p>
-    //                 </div>
-    //                 <div class=" d-flex">
-    //                     <b class="nav me-auto ms-3 mt-3" id="itemPrice">$ ${price}</b>
-    //                     <button class="btn btn-outline-success flex-row-reverse m-2" id="addButton">Add to Cart</button>
-    //                 </div>
-    //             </div>
-    //         </div>
-    //     `
-    // }
   } catch (error) {
     console.log(`este es el error: ${error}`);
   }
@@ -255,12 +229,3 @@ const anotherFunction = async (url_api) => {
 
 anotherFunction(APIcurrency);
 
-//In your Javascript code, you can store data by using:
-//set_cookie("shopping_cart_items", items);
-//Fetch the data by using:
-//var data = get_cookie("shopping_cart_items");
-
-//TODO: boton que agregue al carrito
-//crear la LISTA del carrito y mostrarla.
-
-//TODO: boton que elimine todos los items del carrito
