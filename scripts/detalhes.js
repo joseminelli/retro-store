@@ -21,6 +21,10 @@ function displayItem(item) {
    backButton.addEventListener("click", function() {
      window.location.href = "index.html";
    });
+
+   backButton.ontouchstart = function () {
+    window.location.href = "index.html";
+  };
  
    var btn = document.createElement("button");
    btn.classList.add("btn");
