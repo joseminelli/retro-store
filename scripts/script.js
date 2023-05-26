@@ -5,11 +5,17 @@ if (document.readyState == "loading") {
 }
 
 function ready() {
-  var addToCartButtons = document.getElementsByClassName("shop-item-button"); //"addToCartButtons" são os botões de Ver produto
+  var addToCartButtons = document.getElementsByClassName("shop-item-button");
   for (var i = 0; i < addToCartButtons.length; i++) {
     var button = addToCartButtons[i];
     button.addEventListener("click", addToCartClicked);
   }
+
+  filterProducts(); // Filtrar produtos inicialmente
+
+  var categorySelect = document.getElementById("categorySelect");
+  categorySelect.addEventListener("change", filterProducts);
+
 }
 
 const fetchData = (url_api) => {
@@ -61,19 +67,6 @@ fetch("scripts/itens.json")
       addToCard.id = "addToCard";
       addToCard.onclick = function () {
         redirectToProductPage(item.id);
-        /*
-        addItemToCart(
-          title.textContent.substring(0, 15) + "...",
-          price.textContent
-        );*/
-      };
-      addToCard.ontouchstart = function () {
-        redirectToProductPage(item.id);
-        /*
-        addItemToCart(
-          title.textContent.substring(0, 15) + "...",
-          price.textContent
-        );*/
       };
 
       const actionDiv = document.createElement("div");
@@ -83,20 +76,34 @@ fetch("scripts/itens.json")
       const myContainer = document.createElement("div");
       myContainer.append(image, divCard, actionDiv);
       myContainer.className = "card h-100";
-
-      const bigContainer = document.createElement("div");
-      bigContainer.append(myContainer);
-      bigContainer.className = "col";
-      bigContainer.style.backgroundColor = "white";
+      myContainer.setAttribute("data-category", item.category.toLowerCase());
 
       todosOsItens.push(myContainer);
     });
-    app = app.append(...todosOsItens);
+
+    var app = document.getElementById("app");
+    app.append(...todosOsItens);
   });
 
+function filterProducts() {
+  var selectInput = document.getElementById("categorySelect").value.toLowerCase();
+  var items = document.getElementsByClassName("card");
 
-  
+  for (var i = 0; i < items.length; i++) {
+    var item = items[i];
+    var category = item.getAttribute("data-category");
+
+    if (
+      category &&
+      (category.indexOf(selectInput) > -1 || selectInput === "")
+    ) {
+      item.style.display = "block";
+    } else {
+      item.style.display = "none";
+    }
+  }
+}
+
 function redirectToProductPage(itemId) {
-  // Redirecionar para a página do produto com base no ID
   window.location.href = "detalhes.html?itemId=" + itemId;
 }

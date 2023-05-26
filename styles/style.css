@@ -25,3 +25,29 @@
   background-color: #121212;
   text-decoration: none;
 }
+
+#categorySelect {
+  padding: 6px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #121212;
+  color: #E9E9E9;
+  cursor: pointer;
+}
+
+@media(max-width: 470px){
+
+  #categorySelect {
+    padding: 6px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #121212;
+    color: #E9E9E9;
+    cursor: pointer;
+  }
+  
+
+}
+
