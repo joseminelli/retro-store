@@ -24,6 +24,8 @@ function ready() {
   }
 
   document.getElementById("emptyCart").addEventListener("click", emptyCart);
+
+  loadCartFromLocalStorage(); // Carregar itens do Local Storage
 }
 
 function emptyCart() {
@@ -32,12 +34,14 @@ function emptyCart() {
     cartItems.removeChild(cartItems.firstChild);
   }
   updateCartTotal();
+  saveCartToLocalStorage(); // Limpar itens no Local Storage
 }
 
 function removeCartItem(event) {
   var buttonClicked = event.target;
   buttonClicked.parentElement.parentElement.remove();
   updateCartTotal();
+  saveCartToLocalStorage(); // Atualizar itens no Local Storage
 }
 
 function quantityChanged(event) {
@@ -46,6 +50,7 @@ function quantityChanged(event) {
     input.value = 1;
   }
   updateCartTotal();
+  saveCartToLocalStorage(); // Atualizar itens no Local Storage
 }
 
 function addToCartClicked(event) {
@@ -55,6 +60,96 @@ function addToCartClicked(event) {
   var price = shopItem.getElementsByClassName("shop-item-price")[0].innerText;
   addItemToCart(title, price);
   updateCartTotal();
+  saveCartToLocalStorage(); // Adicionar itens ao Local Storage
+}
+
+function updateCartTotal() {
+  var cartItemContainer = document.getElementsByClassName("cart-items")[0];
+  var cartRows = cartItemContainer.getElementsByClassName("cart-row");
+  var total = 0;
+  for (var i = 0; i < cartRows.length; i++) {
+    var cartRow = cartRows[i];
+    var priceElement = cartRow.getElementsByClassName("cart-price")[0];
+    var quantityElement = cartRow.getElementsByClassName(
+      "cart-quantity-input"
+    )[0];
+    var price = parseFloat(priceElement.innerText.replace("$", ""));
+    var quantity = quantityElement.value;
+    total = total + price * quantity;
+  }
+  total = Math.round(total * 100) / 100;
+  document.getElementsByClassName("cart-total-price")[0].innerText =
+    formatPrice(total);
+}
+
+function addItemToCart(title, price) {
+  var cartRow = document.createElement("div");
+  cartRow.classList.add("cart-row");
+  var cartItems = document.getElementsByClassName("cart-items")[0];
+  var cartItemNames = cartItems.getElementsByClassName("cart-item-title");
+
+  for (var i = 0; i < cartItemNames.length; i++) {
+    if (cartItemNames.innerText == title) {
+      alert("This item is already added to the cart");
+    }
+  }
+
+  var cartRowContents = `
+    <span class="cart-item-title">${title}</span>
+    <div class="cart-item cart-column">
+    </div>
+    <div class="cart-column">
+      <input class="cart-quantity-input" type="number" value="1">
+      <b class="cart-price">${price}</b> <br>
+    </div>
+    <div class="cart-quantity cart-column">
+      <button class="btn btn-danger" type="button">X</button>
+    </div>
+  `;
+  cartRow.innerHTML = cartRowContents;
+  cartItems.append(cartRow);
+  cartRow
+    .getElementsByClassName("btn-danger")[0]
+    .addEventListener("click", removeCartItem);
+  cartRow
+    .getElementsByClassName("cart-quantity-input")[0]
+    .addEventListener("change", quantityChanged);
+}
+
+// Função para salvar os itens no Local Storage
+function saveCartToLocalStorage() {
+  var cartItems = document.getElementsByClassName("cart-items")[0];
+  var cartRows = cartItems.getElementsByClassName("cart-row");
+  var cart = [];
+
+  for (var i = 0; i < cartRows.length; i++) {
+    var cartRow = cartRows[i];
+    var title = cartRow.getElementsByClassName("cart-item-title")[0].innerText;
+    var price = cartRow.getElementsByClassName("cart-price")[0].innerText;
+
+    cart.push({
+      title: title,
+      price: price
+    });
+  }
+
+  localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+// Função para carregar os itens do Local Storage
+function loadCartFromLocalStorage() {
+  var cart = localStorage.getItem("cart");
+
+  if (cart) {
+    var cartItems = JSON.parse(cart);
+
+    for (var i = 0; i < cartItems.length; i++) {
+      var item = cartItems[i];
+      addItemToCart(item.title, item.price);
+    }
+
+    updateCartTotal();
+  }
 }
 
 const fetchData = (url_api) => {
@@ -74,29 +169,21 @@ const fetchData = (url_api) => {
 
 const API = "https://fakestoreapi.com/products/";
 fetch("scripts/itens.json")
-
-  //call API and get JSON format
   .then((response) => response.json())
-  //print API on app = app.append(...todoosItens)
   .then((responseJson) => {
-    //console.log(responseJson);
-    var todosLosItems = [];
+    var todosOsItens = [];
     responseJson.forEach((item) => {
-      //console.log(item.price);
-      //cria imagem
       const image = document.createElement("img");
       image.src = item.image;
       image.className = "card-img-top";
 
-      //cria tíutlo
       const title = document.createElement("h5");
       title.textContent = item.title.substring(0, 36) + "...";
       title.className = "card-title";
-      //cria descrição
+
       const description = document.createElement("p");
       description.textContent = item.description.substring(0, 70) + "...";
 
-      //categoria
       const category = document.createElement("p");
       category.textContent = item.category;
 
@@ -104,12 +191,10 @@ fetch("scripts/itens.json")
       divCard.append(title, description);
       divCard.className = "card-body";
 
-      //cria preço
       const price = document.createElement("b");
       price.textContent = "R" + formatPrice(item.price);
       price.className = "nav me-auto ms-3 mt-3";
 
-      //cria botão
       const addToCard = document.createElement("button");
       addToCard.textContent = "Add ao carrinho";
       addToCard.className = "btn btn-outline-success flex-row-reverse m-2";
@@ -121,25 +206,39 @@ fetch("scripts/itens.json")
         );
       });
 
+      // Adiciona o evento de clique para redirecionar para a página do produto
+      divCard.addEventListener("click", function () {
+        redirectToProductPage(item.id);
+      });
+      image.addEventListener("click", function () {
+        redirectToProductPage(item.id);
+      });
+
       const actionDiv = document.createElement("div");
       actionDiv.append(price, addToCard);
       actionDiv.className = "d-flex";
 
-      //cria conainer
       const myContainer = document.createElement("div");
       myContainer.append(image, divCard, actionDiv);
-      myContainer.className;
-      ("card h-100");
+      myContainer.className = "card h-100";
 
       const bigContainer = document.createElement("div");
-      bigContainer.append = myContainer;
+      bigContainer.append(myContainer);
       bigContainer.className = "col";
       bigContainer.style.backgroundColor = "white";
 
-      todosLosItems.push(myContainer);
+      todosOsItens.push(myContainer);
     });
-    app.append(...todosLosItems);
+    app = app.append(...todosOsItens);
   });
+
+
+  
+function redirectToProductPage(itemId) {
+  // Redirecionar para a página do produto com base no ID
+  window.location.href = "detalhes.html?itemId=" + itemId;
+}
+
 
 var viewCart = document.getElementById("viewCart");
 viewCart.addEventListener("click", updateCartTotal);

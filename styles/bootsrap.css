@@ -293,6 +293,7 @@ figure {
 img,
 svg {
   vertical-align: middle;
+  border-radius: 10px;
 }
 table {
   caption-side: bottom;
@@ -1825,7 +1826,7 @@ progress {
   }
 }
 .form-label {
-    color: #fff;
+  color: #fff;
   margin-bottom: 0.5rem;
 }
 .col-form-label {
@@ -3075,13 +3076,13 @@ fieldset:disabled .btn {
   background-color: transparent;
 }
 .btn-outline-success {
-  color: #0D6EFD;
-  border-color: #0D6EFD;
+  color: #0d6efd;
+  border-color: #0d6efd;
 }
 .btn-outline-success:hover {
   color: #fff;
-  background-color: #0D6EFD;
-  border-color: #0D6EFD;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
 }
 .btn-check:focus + .btn-outline-success,
 .btn-outline-success:focus {
@@ -3093,8 +3094,8 @@ fieldset:disabled .btn {
 .btn-outline-success.dropdown-toggle.show,
 .btn-outline-success:active {
   color: #fff;
-  background-color: #0D6EFD;
-  border-color: #0D6EFD;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
 }
 .btn-check:active + .btn-outline-success:focus,
 .btn-check:checked + .btn-outline-success:focus,
@@ -3105,7 +3106,7 @@ fieldset:disabled .btn {
 }
 .btn-outline-success.disabled,
 .btn-outline-success:disabled {
-  color: #0D6EFD;
+  color: #0d6efd;
   background-color: transparent;
 }
 .btn-outline-info {
@@ -3811,7 +3812,7 @@ fieldset:disabled .btn {
   display: none;
 }
 .tab-content > .active {
-    color: #fff;
+  color: #fff;
   display: block;
 }
 .navbar {
@@ -4295,9 +4296,8 @@ fieldset:disabled .btn {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: #282828;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 }
 .card > hr {
@@ -4382,11 +4382,11 @@ fieldset:disabled .btn {
 }
 .card-img,
 .card-img-top {
-    border-radius: 8px;
+  border-radius: 8px;
 }
 .card-img,
 .card-img-bottom {
-    border-radius: 8px;
+  border-radius: 8px;
 }
 .card-group > .card {
   margin-bottom: 0.75rem;
@@ -5388,6 +5388,17 @@ fieldset:disabled .btn {
   .modal-fullscreen-sm-down .modal-footer {
     border-radius: 0;
   }
+
+  .card {
+    margin-left: auto;
+    max-width: 80%;
+  }
+
+  
+.bg-light {
+  margin-left: auto;
+  margin-right: 1%;
+}
 }
 @media (max-width: 767.98px) {
   .modal-fullscreen-md-down {
@@ -6001,7 +6012,7 @@ fieldset:disabled .btn {
   opacity: 0.5;
 }
 .offcanvas-header {
-    background-color: #121212;
+  background-color: #121212;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -6015,7 +6026,7 @@ fieldset:disabled .btn {
   margin-bottom: -0.5rem;
 }
 .offcanvas-title {
-    background-color: #121212;
+  background-color: #121212;
   margin-bottom: 0;
   line-height: 1.5;
 }
