@@ -196,29 +196,24 @@ fetch("scripts/itens.json")
       price.className = "nav me-auto ms-3 mt-3";
 
       const addToCard = document.createElement("button");
-      addToCard.textContent = "Add ao carrinho";
+      addToCard.textContent = "Ver Produto";
       addToCard.className = "btn btn-outline-success flex-row-reverse m-2";
       addToCard.id = "addToCard";
-      addToCard.addEventListener("click", function () {
+      addToCard.onclick = function () {
+        redirectToProductPage(item.id);
+        /*
         addItemToCart(
           title.textContent.substring(0, 15) + "...",
           price.textContent
-        );
-      });
-
-      // Adiciona o evento de clique para redirecionar para a página do produto
-      divCard.onclick = function () {
-        redirectToProductPage(item.id);
+        );*/
       };
-      image.onclick = function () {
+      addToCard.ontouchstart = function () {
         redirectToProductPage(item.id);
-      };
-
-      divCard.ontouchstart = function () {
-        redirectToProductPage(item.id);
-      };
-      image.ontouchstart = function () {
-        redirectToProductPage(item.id);
+        /*
+        addItemToCart(
+          title.textContent.substring(0, 15) + "...",
+          price.textContent
+        );*/
       };
 
       const actionDiv = document.createElement("div");

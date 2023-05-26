@@ -27,7 +27,7 @@ function displayItem(item) {
    btn.textContent = "Adicionar ao carrinho";
 
    btn.addEventListener("click", function() {
-    alert("Por favor, adicione este item ao carrinho pela página principal.");
+    alert("Este item não está em estoque no momento :(");
   });
    
    // Cria a imagem de seta para o botão
