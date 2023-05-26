@@ -37,11 +37,11 @@
     },
     {
         "id": 4,
-        "title": "Blink-182 - Enema Of The State Vinil",
-        "price": 241.90,
-        "description": "Enema Of The State foi um enorme sucesso comercial. O álbum vendeu mais de 15 milhões de cópias em todo o mundo, catapultando a banda para se tornar uma das maiores bandas de rock da virada do século.",
-        "category": "vinil",
-        "image": "https://cdn.discordapp.com/attachments/1109149984357613638/1109156266422587523/imagem4.png",
+        "title": "Camisa Green Day - American Idiot",
+        "price": 39.90,
+        "description": "Lhe oferecemos camisetas em 100% algodão, evitando assim o mal cheiro causado pelo suor devido a composição diferenciada de nosso tecido.",
+        "category": "camisa",
+        "image": "https://cdn.discordapp.com/attachments/1109149984357613638/1111738897836294255/camisa1.png",
         "rating": {
             "rate": 4.7,
             "count": 500
@@ -61,11 +61,11 @@
     },
     {
         "id": 6,
-        "title": "Mac Demarco - This Old Dog Vinil ",
-        "price": 299.99,
-        "description": " Antes que vocês, anciãos, vire a cabeça e zombe da premissa de um idiota do rock and roll de 20 e poucos anos que se autodenomina um velho qualquer, considere o seguinte: o referido perpetrador, aquele que atende pelo nome de Mac DeMarco, gastou melhor parte de seu tempo até agora escrevendo, gravando e lançando um álbum de sua própria música praticamente a cada virada de calendário e praticamente por conta própria",
-        "category": "vinil",
-        "image": "https://cdn.discordapp.com/attachments/1109149984357613638/1109160397174485152/imagem6.png",
+        "title": "Camisa METALLICA - And Justice for all",
+        "price": 69.99,
+        "description": "A Camiseta passa por processo de estampa a laser o que torna suas cores duradouras e resistentes. A camiseta é fabricada em tecido 100% poliéster, proporcionando conforto e estilo.",
+        "category": "camisa",
+        "image": "https://cdn.discordapp.com/attachments/1109149984357613638/1111739588713656360/camisa2.png",
         "rating": {
             "rate": 3.9,
             "count": 70
@@ -97,11 +97,11 @@
     },
     {
         "id": 9,
-        "title": "Lana Del Rey - Ultraviolence",
-        "price": 50.90,
-        "description": "Álbum de 2014 da aclamada cantora/compositora. Lana Del Rey cativou o mundo com seu álbum de estreia BORN TO DIE, que ganhou disco de platina nos Estados Unidos.",
-        "category": "vinil",
-        "image": "https://cdn.discordapp.com/attachments/1109149984357613638/1109225583050752133/imagem9.png",
+        "title": "Camisa Ramones",
+        "price": 57.60,
+        "description": "A Camiseta Ramones Bomber Juvenil é feita em tecido de algodão, macio e confortável para a galerinha. Além da alta qualidade do material, a resolução da estampa em silk screen é perfeita.É muito estilo e atitude em uma peça só.",
+        "category": "camisa",
+        "image": "https://cdn.discordapp.com/attachments/1109149984357613638/1111740707296792798/camisa3.png",
         "rating": {
             "rate": 1.9,
             "count": 100
@@ -112,7 +112,7 @@
         "title": "Sufjan Stevens - Carrie & Lowelld",
         "price": 291.99,
         "description": "Carrie & Lowell soa como memória: abrange décadas, mas não negocia com pastiche ou nostalgia. Os vocais translúcidos de duas faixas de Stevens lavam o painel de Americana, mas enquanto corremos em direção à costa, somos lembrados de que a luz do sol leva à sombra, pois esta é uma paisagem de estradas terminais, pontes instáveis, eventos traumáticos. locadoras de vídeo e camas infelizes que fornecem o cenário para contos de carros canivetes, funerais e perdão para os mortos",
-        "category": "vinil1",
+        "category": "vinil",
         "image": "https://cdn.discordapp.com/attachments/1109149984357613638/1109226495085400094/imagem10.png",
         "rating": {
             "rate": 1.9,
@@ -133,6 +133,54 @@
     },
     {
         "id": 12,
+        "title": "Blink-182 - Enema Of The State Vinil",
+        "price": 241.90,
+        "description": "Enema Of The State foi um enorme sucesso comercial. O álbum vendeu mais de 15 milhões de cópias em todo o mundo, catapultando a banda para se tornar uma das maiores bandas de rock da virada do século.",
+        "category": "vinil",
+        "image": "https://cdn.discordapp.com/attachments/1109149984357613638/1109156266422587523/imagem4.png",
+        "rating": {
+            "rate": 4.7,
+            "count": 500
+        }
+    },
+    {
+        "id": 13,
+        "title": "Camisa Lana Del Rey - Ocean Blvd",
+        "price": 52.44,
+        "description": "O tecido da sua blusinha é 100% algodão penteado fio 30, a estampa é feita via silk screen tradicional. As medidas pode ter uma variação de até 4 cm para mais ou para menos;",
+        "category": "camisa",
+        "image": "https://cdn.discordapp.com/attachments/1109149984357613638/1111741317781913610/camisa4.png",
+        "rating": {
+            "rate": 1.9,
+            "count": 100
+        }
+    },
+    {
+        "id": 14,
+        "title": "Mac Demarco - This Old Dog Vinil ",
+        "price": 299.99,
+        "description": " Antes que vocês, anciãos, vire a cabeça e zombe da premissa de um idiota do rock and roll de 20 e poucos anos que se autodenomina um velho qualquer, considere o seguinte: o referido perpetrador, aquele que atende pelo nome de Mac DeMarco, gastou melhor parte de seu tempo até agora escrevendo, gravando e lançando um álbum de sua própria música praticamente a cada virada de calendário e praticamente por conta própria",
+        "category": "vinil",
+        "image": "https://cdn.discordapp.com/attachments/1109149984357613638/1109160397174485152/imagem6.png",
+        "rating": {
+            "rate": 3.9,
+            "count": 70
+        }
+    },
+    {
+        "id": 15,
+        "title": "Lana Del Rey - Ultraviolence",
+        "price": 50.90,
+        "description": "Álbum de 2014 da aclamada cantora/compositora. Lana Del Rey cativou o mundo com seu álbum de estreia BORN TO DIE, que ganhou disco de platina nos Estados Unidos.",
+        "category": "vinil",
+        "image": "https://cdn.discordapp.com/attachments/1109149984357613638/1109225583050752133/imagem9.png",
+        "rating": {
+            "rate": 1.9,
+            "count": 100
+        }
+    },
+    {
+        "id": 16,
         "title": "Green Day - American Idiot",
         "price": 303.44,
         "description": "Dois discos de vinil preto de peso regular em Pallas em Stoughton capa dobrável embrulhada em papel com inserção de pôster e cartão postal compartilhado do catálogo do Green Day.",
