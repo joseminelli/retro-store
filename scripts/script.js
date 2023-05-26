@@ -214,6 +214,13 @@ fetch("scripts/itens.json")
         redirectToProductPage(item.id);
       };
 
+      divCard.ontouchstart = function () {
+        redirectToProductPage(item.id);
+      };
+      image.ontouchstart = function () {
+        redirectToProductPage(item.id);
+      };
+
       const actionDiv = document.createElement("div");
       actionDiv.append(price, addToCard);
       actionDiv.className = "d-flex";
