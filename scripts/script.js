@@ -207,12 +207,12 @@ fetch("scripts/itens.json")
       });
 
       // Adiciona o evento de clique para redirecionar para a página do produto
-      divCard.addEventListener("click", function () {
+      divCard.onclick = function () {
         redirectToProductPage(item.id);
-      });
-      image.addEventListener("click", function () {
+      };
+      image.onclick = function () {
         redirectToProductPage(item.id);
-      });
+      };
 
       const actionDiv = document.createElement("div");
       actionDiv.append(price, addToCard);
