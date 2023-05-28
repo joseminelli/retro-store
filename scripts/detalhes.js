@@ -18,7 +18,7 @@ function displayItem(item) {
   // Cria o botão para voltar para o index.html
   var backButton = document.createElement("button");
   backButton.setAttribute("id", "voltar");
-  backButton.addEventListener("click", function() {
+  backButton.addEventListener("click", function () {
     window.location.href = "index.html";
   });
 
@@ -30,7 +30,7 @@ function displayItem(item) {
   btn.classList.add("btn");
   btn.textContent = "Adicionar ao carrinho";
 
-  btn.addEventListener("click", function() {
+  btn.addEventListener("click", function () {
     alert("Este item não está em estoque no momento :(");
   });
 
@@ -67,7 +67,6 @@ function displayItem(item) {
   container.appendChild(description);
   container.appendChild(btn);
 }
-
 
 // Obtém o valor do itemId da URL
 var url = window.location.href;

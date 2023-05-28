@@ -5393,11 +5393,10 @@ fieldset:disabled .btn {
     max-width: 80%;
   }
 
-  
-.bg-light {
-  margin-left: -1%;
-  margin-right: 6%;
-}
+  .bg-light {
+    margin-left: -1%;
+    margin-right: 6%;
+  }
 }
 @media (max-width: 767.98px) {
   .modal-fullscreen-md-down {

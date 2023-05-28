@@ -15,7 +15,6 @@ function ready() {
 
   var categorySelect = document.getElementById("categorySelect");
   categorySelect.addEventListener("change", filterProducts);
-
 }
 
 const fetchData = (url_api) => {
@@ -33,7 +32,7 @@ const fetchData = (url_api) => {
   });
 };
 
-const API = "https://fakestoreapi.com/products/";
+//fetch("https://fakestoreapi.com/products/")     -    usa os itens da API
 fetch("scripts/itens.json")
   .then((response) => response.json())
   .then((responseJson) => {
@@ -86,7 +85,9 @@ fetch("scripts/itens.json")
   });
 
 function filterProducts() {
-  var selectInput = document.getElementById("categorySelect").value.toLowerCase();
+  var selectInput = document
+    .getElementById("categorySelect")
+    .value.toLowerCase();
   var items = document.getElementsByClassName("card");
 
   for (var i = 0; i < items.length; i++) {

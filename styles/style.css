@@ -9,10 +9,10 @@
   height: auto;
   width: 50%;
 }
-#header{
-    display: flex;
-    align-items: center;
-    max-height: 50%;
+#header {
+  display: flex;
+  align-items: center;
+  max-height: 50%;
 }
 .nav-bar {
   display: flex;
@@ -32,22 +32,18 @@
   border: 1px solid #ccc;
   border-radius: 4px;
   background-color: #121212;
-  color: #E9E9E9;
+  color: #e9e9e9;
   cursor: pointer;
 }
 
-@media(max-width: 470px){
-
+@media (max-width: 470px) {
   #categorySelect {
     padding: 6px 10px;
     font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: #121212;
-    color: #E9E9E9;
+    color: #e9e9e9;
     cursor: pointer;
   }
-  
-
 }
-
