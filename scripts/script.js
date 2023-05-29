@@ -57,7 +57,7 @@ fetch("scripts/itens.json")
       divCard.className = "card-body";
 
       const price = document.createElement("b");
-      price.textContent = "R" + item.price;
+      price.textContent = "R$" + item.price;
       price.className = "nav me-auto ms-3 mt-3";
 
       const addToCard = document.createElement("button");
