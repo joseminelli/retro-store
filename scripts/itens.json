@@ -5,7 +5,7 @@
         "price": 199.99,
         "description": "Arctic Monkeys lançaram seu quinto álbum, intitulado AM. AM foi produzido por James Ford e co-produzido por Ross Orton at Sage & Sound Recording",
         "category": "vinil",
-        "image": "../img/arcticMonkeys.png",
+        "image": "/img/arcticMonkeys.png",
         "rating": {
             "rate": 5.0,
             "count": 120
@@ -17,7 +17,7 @@
         "price": 199.99,
         "description": "Favorite Worst Nightmare é o álbum seguinte ao fenômeno de maior sucesso de 2006! O primeiro álbum do Arctic Monkeys, Whatever People Say I Am",
         "category": "vinil",
-        "image": "../img/arcticMonkeys2.png",
+        "image": "/img/arcticMonkeys2.png",
         "rating": {
             "rate": 4.1,
             "count": 259
@@ -29,7 +29,7 @@
         "price": 241.90,
         "description": "Parachutes é o álbum de estreia da banda inglesa de rock Coldplay, lançado pela gravadora Parlophone em 10 de julho de 2000 no Reino Unido",
         "category": "vinil",
-        "image": "../img/parachutes.png",
+        "image": "/img/parachutes.png",
         "rating": {
             "rate": 4.7,
             "count": 500
@@ -41,7 +41,7 @@
         "price": 39.90,
         "description": "Lhe oferecemos camisetas em 100% algodão, evitando assim o mal cheiro causado pelo suor devido a composição diferenciada de nosso tecido.",
         "category": "camisa",
-        "image": "../img/camisagreenday.png",
+        "image": "/img/camisagreenday.png",
         "rating": {
             "rate": 4.7,
             "count": 500
@@ -53,7 +53,7 @@
         "price": 133.90,
         "description": "Lançamento em 2013, o aguardado terceiro álbum completo da banda Alt-Rock. Melophobia foi gravado em Nashville, TN e reúne a banda com o produtor Jay Joyce, que produziu os dois lançamentos anteriores do grupo.",
         "category": "vinil",
-        "image": "../img/cageTheElephant.png",
+        "image": "/img/cageTheElephant.png",
         "rating": {
             "rate": 4.6,
             "count": 400
@@ -65,7 +65,7 @@
         "price": 69.99,
         "description": "A Camiseta passa por processo de estampa a laser o que torna suas cores duradouras e resistentes. A camiseta é fabricada em tecido 100% poliéster, proporcionando conforto e estilo.",
         "category": "camisa",
-        "image": "../img/camisaMetallica.png",
+        "image": "/img/camisaMetallica.png",
         "rating": {
             "rate": 3.9,
             "count": 70
@@ -77,7 +77,7 @@
         "price": 314.99,
         "description": "Versçao limitada em vinil deste álbum clássico de 1991. Nevermind se tornou um sucesso surpresa no final de 1991, em grande parte devido à popularidade de seu primeiro single, 'Smells Like Teen Spirit'. Em janeiro de 1992, substituiu o álbum Dangerous, de Michael Jackson, em primeiro lugar na parada Billboard 200.",
         "category": "vinil",
-        "image": "../img/nirvana.png",
+        "image": "/img/nirvana.png",
         "rating": {
             "rate": 3,
             "count": 400
@@ -89,7 +89,7 @@
         "price": 409.99,
         "description": "Eu só quero dizer que esta é uma coleção brilhante para qualquer fã do Green Day, seja 1 a ano ou 30 anos, esta é uma introdução perfeita à sua música.",
         "category": "vinil",
-        "image": "../img/greenDay.png",
+        "image": "/img/greenDay.png",
         "rating": {
             "rate": 1.9,
             "count": 100
@@ -101,7 +101,7 @@
         "price": 57.60,
         "description": "A Camiseta Ramones Bomber Juvenil é feita em tecido de algodão, macio e confortável para a galerinha. Além da alta qualidade do material, a resolução da estampa em silk screen é perfeita.É muito estilo e atitude em uma peça só.",
         "category": "camisa",
-        "image": "../img/camisaramones.png",
+        "image": "/img/camisaramones.png",
         "rating": {
             "rate": 1.9,
             "count": 100
@@ -113,7 +113,7 @@
         "price": 291.99,
         "description": "Carrie & Lowell soa como memória: abrange décadas, mas não negocia com pastiche ou nostalgia. Os vocais translúcidos de duas faixas de Stevens lavam o painel de Americana, mas enquanto corremos em direção à costa, somos lembrados de que a luz do sol leva à sombra, pois esta é uma paisagem de estradas terminais, pontes instáveis, eventos traumáticos. locadoras de vídeo e camas infelizes que fornecem o cenário para contos de carros canivetes, funerais e perdão para os mortos",
         "category": "vinil",
-        "image": "../img/sufjanSteevens.png",
+        "image": "/img/sufjanSteevens.png",
         "rating": {
             "rate": 1.9,
             "count": 100
@@ -125,7 +125,7 @@
         "price": 429.19,
         "description": "Ouvir música é importante na vida de todo mundo. Por isso, precisa-se comprar os melhores álbuns e conteúdos para aumentar seu repertório. Um dos produtos que vai te ajudar com isso é o álbum Lust For Life, de Lana Del Rey. Lust for Life é o quinto álbum de estúdio gravado pela cantora e compositora americana Lana Del Rey",
         "category": "vinil",
-        "image": "../img/lana.png",
+        "image": "/img/lana.png",
         "rating": {
             "rate": 1.9,
             "count": 100
@@ -137,7 +137,7 @@
         "price": 241.90,
         "description": "Enema Of The State foi um enorme sucesso comercial. O álbum vendeu mais de 15 milhões de cópias em todo o mundo, catapultando a banda para se tornar uma das maiores bandas de rock da virada do século.",
         "category": "vinil",
-        "image": "../img/blink.png",
+        "image": "/img/blink.png",
         "rating": {
             "rate": 4.7,
             "count": 500
@@ -149,7 +149,7 @@
         "price": 52.44,
         "description": "O tecido da sua blusinha é 100% algodão penteado fio 30, a estampa é feita via silk screen tradicional. As medidas pode ter uma variação de até 4 cm para mais ou para menos;",
         "category": "camisa",
-        "image": "../img/camisalana.png",
+        "image": "/img/camisalana.png",
         "rating": {
             "rate": 1.9,
             "count": 100
@@ -161,7 +161,7 @@
         "price": 299.99,
         "description": " Antes que vocês, anciãos, vire a cabeça e zombe da premissa de um idiota do rock and roll de 20 e poucos anos que se autodenomina um velho qualquer, considere o seguinte: o referido perpetrador, aquele que atende pelo nome de Mac DeMarco, gastou melhor parte de seu tempo até agora escrevendo, gravando e lançando um álbum de sua própria música praticamente a cada virada de calendário e praticamente por conta própria",
         "category": "vinil",
-        "image": "../img/demarco.png",
+        "image": "/img/demarco.png",
         "rating": {
             "rate": 3.9,
             "count": 70
@@ -173,7 +173,7 @@
         "price": 50.90,
         "description": "Álbum de 2014 da aclamada cantora/compositora. Lana Del Rey cativou o mundo com seu álbum de estreia BORN TO DIE, que ganhou disco de platina nos Estados Unidos.",
         "category": "vinil",
-        "image": "../img/ultraviolence.png",
+        "image": "/img/ultraviolence.png",
         "rating": {
             "rate": 1.9,
             "count": 100
@@ -185,7 +185,7 @@
         "price": 303.44,
         "description": "Dois discos de vinil preto de peso regular em Pallas em Stoughton capa dobrável embrulhada em papel com inserção de pôster e cartão postal compartilhado do catálogo do Green Day.",
         "category": "vinil",
-        "image": "../img/americanidiot.png",
+        "image": "/img/americanidiot.png",
         "rating": {
             "rate": 1.9,
             "count": 100
