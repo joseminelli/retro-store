@@ -185,7 +185,7 @@
         "price": 303.44,
         "description": "Dois discos de vinil preto de peso regular em Pallas em Stoughton capa dobrável embrulhada em papel com inserção de pôster e cartão postal compartilhado do catálogo do Green Day.",
         "category": "vinil",
-        "image": "/img/americanidiot.png",
+        "image": "img/americanIdiot.png",
         "rating": {
             "rate": 1.9,
             "count": 100
