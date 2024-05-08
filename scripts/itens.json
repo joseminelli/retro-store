@@ -5,7 +5,7 @@
         "price": 199.99,
         "description": "Arctic Monkeys lançaram seu quinto álbum, intitulado AM. AM foi produzido por James Ford e co-produzido por Ross Orton at Sage & Sound Recording",
         "category": "vinil",
-        "image": "./img/arcticMonkeys.png",
+        "image": "../img/arcticMonkeys.png",
         "rating": {
             "rate": 5.0,
             "count": 120
