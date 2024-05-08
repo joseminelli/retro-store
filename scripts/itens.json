@@ -41,7 +41,7 @@
         "price": 39.90,
         "description": "Lhe oferecemos camisetas em 100% algodão, evitando assim o mal cheiro causado pelo suor devido a composição diferenciada de nosso tecido.",
         "category": "camisa",
-        "image": "img/camisagreenday.png",
+        "image": "img/Camisagreenday.png",
         "rating": {
             "rate": 4.7,
             "count": 500
@@ -53,7 +53,7 @@
         "price": 133.90,
         "description": "Lançamento em 2013, o aguardado terceiro álbum completo da banda Alt-Rock. Melophobia foi gravado em Nashville, TN e reúne a banda com o produtor Jay Joyce, que produziu os dois lançamentos anteriores do grupo.",
         "category": "vinil",
-        "image": "img/cageTheElephant.png",
+        "image": "img/cagetheelephant.png",
         "rating": {
             "rate": 4.6,
             "count": 400
@@ -65,7 +65,7 @@
         "price": 69.99,
         "description": "A Camiseta passa por processo de estampa a laser o que torna suas cores duradouras e resistentes. A camiseta é fabricada em tecido 100% poliéster, proporcionando conforto e estilo.",
         "category": "camisa",
-        "image": "img/camisaMetallica.png",
+        "image": "img/CamisaMetallica.png",
         "rating": {
             "rate": 3.9,
             "count": 70
@@ -101,7 +101,7 @@
         "price": 57.60,
         "description": "A Camiseta Ramones Bomber Juvenil é feita em tecido de algodão, macio e confortável para a galerinha. Além da alta qualidade do material, a resolução da estampa em silk screen é perfeita.É muito estilo e atitude em uma peça só.",
         "category": "camisa",
-        "image": "img/camisaramones.png",
+        "image": "img/camisaRamones.png",
         "rating": {
             "rate": 1.9,
             "count": 100
